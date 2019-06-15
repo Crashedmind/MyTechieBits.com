@@ -1,14 +1,27 @@
 
 
-# Git 
-'''
+# Git
+## Setup SSH access to Github
+```bash
+eval $(ssh-agent) 
+ssh-add ~/.ssh/id_rsaGithub #Add SSH key pair
+ssh-add -l # list SSH added keys
+```
+
+## Git remote
+```bash
+git remote set-url origin git@github.com:Crashedmind/MyTechieBits.com.git
+git push origin master
+```
+
+
+## Git local
+```bash
 git clone https://github.com/Crashedmind/MyTechieBits.com.git
-# Make edits
+### Make edits
 git commit -m commit-message # commit to local Git repo
 git status
-git push origin master 
-git status
-...
+```
 
 # Usage
 
