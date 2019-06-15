@@ -18,7 +18,7 @@ git status
 Download project
 
 # Cloning
-git clone https://github.com/Crashedmind/MyTechieBits.com.git
+git clone https://github.com/Crashedmind/MyTechieBits.com.git OR git clone ssh://git@github.com/Crashedmind/MyTechieBits.com.git
 cd MyTechieBits.com
 
 
