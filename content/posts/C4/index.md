@@ -8,11 +8,6 @@ published: false
 ---
 
 
-1. [Introduction](#introduction)
-2. [Books](#books)
-   1. [Software Architecture for Developers: Volume 1 - Technical leadership and the balance with Agility](#software-architecture-for-developers-volume-1---technical-leadership-and-the-balance-with-agility)
-   2. [Software Architecture for Developers - Volume 2 - Visualise, document and explore your software architecture](#software-architecture-for-developers---volume-2---visualise-document-and-explore-your-software-architecture)
-3. [C4 Plantuml VSCode](#c4-plantuml-vscode)
 
 # Introduction
 
