@@ -7,6 +7,14 @@ tags: ['DeliverValue']
 published: false
 ---
 
+1. [Value Stream](#value-stream)
+2. [Filter](#filter)
+3. [Focus](#focus)
+   1. [Agile](#agile)
+   2. [Pareto](#pareto)
+4. [Flow](#flow)
+5. [Feedback](#feedback)
+
 # Value Stream
 
 >> "Your mental energy is your most valuable asset" so we need to spend it wisely 
