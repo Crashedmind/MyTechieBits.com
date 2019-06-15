@@ -2,7 +2,7 @@ import Typography from 'typography';
 
 export const typography = new Typography({
   title: 'GatsbyTutorial',
-  baseFontSize: '18px',
+  baseFontSize: '14px',
   baseLineHeight: 1.45,
   headerFontFamily: [
     'Candal',
