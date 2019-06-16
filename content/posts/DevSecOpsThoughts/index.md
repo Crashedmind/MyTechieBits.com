@@ -7,8 +7,6 @@ tags: ['DevSecOps']
 published: true
 ---
 
-1. [Dev(Sec)Ops Thoughts from the Trenches](#devsecops-thoughts-from-the-trenches)
-   1. [Presentation](#presentation)
 
 # Dev(Sec)Ops Thoughts from the Trenches 
 
