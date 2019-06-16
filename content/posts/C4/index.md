@@ -8,16 +8,33 @@ published: false
 ---
 
 
-
-# Introduction
+The [C4 Model](https://c4model.com/) is a lightweight software architecture description method. It consists of a set of 4 diagrams that describe the **static** structure of a software system. 
 
 ![C4](c4.png)
 https://c4model.com/
 
-The [C4 Model](https://c4model.com/) is a lightweight software architecture technique.
-It is inpsired by [the 4+1 model for software architecture](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)
 
-It can be combined with arc42 documentation template. The diagrams map as follows:
+The 4C's are:
+1. Context: A high-level diagram that sets the scene; including key system dependencies
+and people (actors/roles/personas/etc). [Context diagrams](https://en.wikipedia.org/wiki/System_context_diagram) are standard in software engineering (even if not used often).
+2. Container: A container diagram shows the high-level technology choices, how responsibilities are distributed across them and how the containers communicate.
+3. Component: For each container, a component diagram lets you see the key logical
+components and their relationships.
+4. Classes (or Code): This is optional and is the lowest level of detail.
+
+It is not formal UML e.g. the UML actor stickman is deliberately not used as it causes confusion between a person or a system.
+
+# CheatSheets
+http://www.codingthearchitecture.com/2017/04/27/visualising_and_documenting_software_architecture_cheat_sheets.html
+
+# Related Methods
+
+## 4+1 model
+C4 is inpsired by [the 4+1 model for software architecture](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)
+
+
+## ARC42
+C4 can be combined with arc42 documentation template. The diagrams map as follows:
 
 | Arc42         | C4        
 |:------------- |:------------
@@ -25,6 +42,12 @@ It can be combined with arc42 documentation template. The diagrams map as follow
 | Building Block View (level 1) | Container diagram
 | Building Block View (level 2) | Component diagram
 | Building Block View (level 3) | Class diagram
+
+## Data-flow diagrams
+[Data-flow diagrams (DFD)](https://en.wikipedia.org/wiki/Data-flow_diagram) (to desribe data **activity**) use a similar hierachical approach starting with the contextual DFD0. They use a multi-level numbering scheme 
+- DFD0: 1 
+- DFD1: 1.1., 1.2, 
+- DFD2: 1.1.1, 1.1.2,
  
 # Books
 
@@ -39,4 +62,9 @@ As at 2019-6-15 this book is 80% complete LAST UPDATED ON 2019-03-05
 
 
 # C4 Plantuml VSCode 
-TODO
+[C4-PlantUML](https://github.com/RicardoNiepel/C4-PlantUML) combines the benefits of [PlantUML](http://plantuml.com/) (an open source project that allows you to create UML diagrams automatically from a text description), and the C4 model for providing a simple way of describing and communicate software architectures.
+It also supports [C4 PlantUML Snippets for Visual Studio Code](https://github.com/RicardoNiepel/C4-PlantUML#snippets-for-visual-studio-code)
+
+
+
+ 
