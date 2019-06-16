@@ -25,11 +25,14 @@ components and their relationships.
 It is not formal UML e.g. the UML actor stickman is deliberately not used as it causes confusion between a person or a system.
 
 # CheatSheets
-http://www.codingthearchitecture.com/2017/04/27/visualising_and_documenting_software_architecture_cheat_sheets.html
+The [CheatSheet](http://www.codingthearchitecture.com/2017/04/27/visualising_and_documenting_software_architecture_cheat_sheets.html) gives a good summary of the C4 model and diagrams.
+
 
 # Related Methods
+There are a number of related models and templates:
 
 ## 4+1 model
+
 C4 is inpsired by [the 4+1 model for software architecture](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)
 
 
