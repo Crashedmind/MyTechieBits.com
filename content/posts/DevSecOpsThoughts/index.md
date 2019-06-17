@@ -1,7 +1,7 @@
 ---
 path: "/DevSecOpsThoughts"
 cover: "../DevSecOpsThoughts/factory.png"
-date: "2019-06-13"
+date: "2019-04-09"
 title: "DevSecOps Thoughts from the Trenches"
 tags: ['DevSecOps']
 published: true
