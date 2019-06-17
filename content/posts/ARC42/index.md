@@ -7,23 +7,26 @@ tags: ['ARC42', 'Architecture']
 published: true
 ---
 
+
 Arc42 is a template for architecture communication and documentation.
 
 "Arc" is for Architecture, and "42" is based on the book "Hitchhikers Guide to the Galaxy", by Douglas Adams, where "42" is the 
-> *“answer to the meaning of life, the universe, and everything” *
+> “answer to the meaning of life, the universe, and everything” 
+
+While Arc42
+Arc42 answers the following two questions in a pragmatic way, but can be tailored to your specific needs:
+- What should we document/communicate about our architecture?
+- How should we document/communicate?
 
 ![Outline](arc42model.png)
 
-While Arc42 may not hold the "answer to the meaning of life, the universe, and everything", it does answer the following questions in a pragmatic way:
-- What should we document/communicate about our architecture?
-- How should we document/communicate?
+
+
 
 # Template
 The [Template](https://arc42.org/download) architecture doduments are available for download in many formats.
 
 The template is guided documentation with [tips](https://docs.arc42.org/home/).
-
-It can be tailored to your needs.
 
 
 ## ARC42

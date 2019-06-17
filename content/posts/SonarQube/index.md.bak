@@ -1,0 +1,49 @@
+---
+path: "/SonarQube"
+cover: "../SoftwareAssurance/SoftwareAssurance.png"
+date: "2019-01-12"
+title: "SoftwareAssurance"
+tags: ['Software Assurance']
+published: true
+---
+
+**SW Assurance = Quality + Security**
+
+[Software assurance (SwA)](https://en.wikipedia.org/wiki/Software_assurance) is defined as "the level of confidence that software is free from vulnerabilities, either intentionally designed into the software or accidentally inserted at any time during its lifecycle, and that the software functions in the intended manner."[[1]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-1)
+
+- The main objective of software assurance is to ensure that the processes, procedures, and products used to produce and sustain the software conform to all requirements and standards specified to govern those processes, procedures, and products.[[2]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-DACS-2) 
+- A secondary objective of software assurance is to ensure that the software-intensive systems we produce are more secure. For such software-intensive systems, a preventive dynamic and static analysis of the potential vulnerabilities is required, and holistic, system-level understanding is recommended. As stated by Gary McGraw, "Design flaws account for 50% of security problems. One can't find design defects by staring at code. A higher-level understanding is required. That's why architectural risk analysis plays an essential role in any solid software security program."[[3]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-3)
+
+
+# Software Assurance across the Software Lifecycle
+Software Assurance happens across the Software Lifecycle - not in any one process or tool.
+
+The earlier in the Software Lifecycle it happens the better.
+
+Training is the foundation for a Security SDLC - it prevents the defects being put into the code in the first place - detection is much more expensive than prevention, and correction is much more expensive that detection.
+
+# Where are the bugs?
+<50% of defects are associated with coding
+
+A significant number of defect occur before any code is written i.e. in Requirement Analysis and Design Phases
+
+e.g. 64% per Crosstalk, the Journal of Defense Software Engineering. 
+e.g. 45% per Computer Finance Magazine 
+ ref: https://www.isixsigma.com/industries/software-it/defect-prevention-reducing-costs-and-enhancing-quality/
+e.g. 50% "Design flaws account for 50% of security problems Gary McGraw (author of many books and over 100 peer-reviewed publications on IT security)
+(lightbulb) We observed ~50% figure on a previous project (New product with a customer) based on real data in Jira (where support case tickets were marked as WorkedAsDesigned i.e. as far as we were concerned it was working, as far as customer was concerned it did not meet their requirements.
+
+
+
+Where are the Coding Bugs?
+Of the 4 Defect types shown in the code, Static Analysis is optimal for only 1: Generic Defects - Visible in the Code i.e. Static Analysis will only find a subset of the defects in the code.
+
+
+
+
+(info) ref Book: Secure Programming with Static Analysis vulnerability/defect types
+
+(info) see StaticAnalysis for background info
+
+(lightbulb) For this reason, Chris Madden has contributed to OWASP projects e.g. OWASP Dev Guide Cryptography
+
