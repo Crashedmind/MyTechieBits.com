@@ -1,6 +1,6 @@
 ---
 path: "/SonarQube"
-cover: "../SonarQube/SonarQube.png"
+cover: "../SonarQube/sonarqube.png"
 date: "2019-03-17"
 title: "SONAR Source Code Quality Dashboard "
 tags: ['SonarQube', 'Software Assurance']

@@ -1,19 +1,19 @@
 ---
 path: "/SoftwareAssurance"
-cover: "../SoftwareAssurance/SoftwareAssurance.png"
+cover: "../SoftwareAssurance/swass.png"
 date: "2019-01-12"
-title: "SoftwareAssurance"
+title: "Software Assurance"
 tags: ['Software Assurance']
 published: true
 ---
 
-**SW Assurance = Quality + Security**
 
 [Software assurance (SwA)](https://en.wikipedia.org/wiki/Software_assurance) is defined as "the level of confidence that software is free from vulnerabilities, either intentionally designed into the software or accidentally inserted at any time during its lifecycle, and that the software functions in the intended manner."[[1]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-1)
 
 - The main objective of software assurance is to ensure that the processes, procedures, and products used to produce and sustain the software conform to all requirements and standards specified to govern those processes, procedures, and products.[[2]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-DACS-2) 
 - A secondary objective of software assurance is to ensure that the software-intensive systems we produce are more secure. For such software-intensive systems, a preventive dynamic and static analysis of the potential vulnerabilities is required, and holistic, system-level understanding is recommended. As stated by Gary McGraw, "Design flaws account for 50% of security problems. One can't find design defects by staring at code. A higher-level understanding is required. That's why architectural risk analysis plays an essential role in any solid software security program."[[3]](https://en.wikipedia.org/wiki/Software_assurance#cite_note-3)
 
+**SW Assurance = Quality + Security**
 
 # Software Assurance across the Software Lifecycle
 Software Assurance happens across the Software Lifecycle - not in any one process or tool.
@@ -112,7 +112,7 @@ https://www.owasp.org/index.php/Benchmark provides [test code in Java](https://g
 ![costofdefect](costofdefect.png)
 For cost reasons we want to find defects ASAP i.e. not have to wait for a scan on a nightly build or a release etc...
 
-This can be code as code is being typed at development type
+This can be done as code is being typed at development type
 e.g. https://www.sonarlint.org/ (Both SonarLint and SonarQube rely on the same static source code analyzers)
 e.g. For C/C++ code, I use VSCode on Linux and use Cppcheck plugin to check as I type.
 
