@@ -4,7 +4,7 @@ cover: "../C4/c4.png"
 date: "2019-06-15"
 title: "C4 Architecture"
 tags: ['C4', 'Architecture']
-published: false
+published: true
 ---
 
 
