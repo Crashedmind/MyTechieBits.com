@@ -8,7 +8,16 @@ published: true
 ---
 
 
-Attack trees provide a lightweight, methodical way of describing the security of systems, based on varying known attacks. Basically, you represent attacks against a system in a tree structure, with the goal as the root node and different ways of achieving that goal as leaf nodes.
+Attack trees provide a methodical way of describing the security of systems,based on varying known attacks. Basically, you represent attacks against a system in a tree structure, with the goal as the root node and different ways of achieving that goal as leaf nodes.
+
+Attack Trees are essentailly lightweight Threat model - but the same same steps are used:
+1. Identify Assets
+2. Identify Threats
+3. Understand Threats - this additionally requires an understanding of the system under threat
+4. Categorize Threats
+5. Rate Threats
+6. Identify mitigation strategies (countermeasures)
+
 
 ![Attack Trees](attacktrees.png)
 
@@ -25,7 +34,7 @@ Attack Trees
 
 
 
-# Attack tree layout
+# Attack Tree Layout
 The top node defines the attack objective e.g. to get the PIN number.
 
 There may be different attack objectives e.g. Get PIN, Get Card Data, Get keys, etc…
@@ -69,7 +78,7 @@ e.g. To "Add KeyPad h/w bug without causing tamper" one can
 - "Reverse Engineer h/w"
 
 
-# Large trees
+# Large Trees
 The best way to organise large or separate attack tress is to reference them from one overall index tree.
 
 A Master Attack Tree is created with the main nodes.
@@ -135,3 +144,20 @@ The [Common Attack Pattern Enumeration and Classification](https://capec.mitre.o
 | Relay             | A message is forwarded outside of the intended communication environment
 | Denial of service             | Messages are sent to overwhelm the communication end points to prevent legitimate communication and service.
 | Reflection attack             | A method of attacking a challenge-response authentication system that uses the same protocol in both directions. That is, the same challenge-response protocol is used by each side to authenticate the other side. The essential idea of the attack is to trick the target into providing the answer to its own challenge.
+
+
+# Related Methods
+Some heavyweight Threat Modelling tools and frameworks are listed here for reference.
+
+## STRIDE
+STRIDE is problaby the best known [Threat Model](https://en.wikipedia.org/wiki/Threat_model). 
+[Spoofing - Tampering - Repudiation - Information Disclosure - Denial of Service - Escalation of Privilege](https://en.wikipedia.org/wiki/STRIDE_(security)) from MicroSoft.
+
+There is also an associated [Microsoft free threat modeling tool](https://www.microsoft.com/en-us/download/details.aspx?id=49168).
+
+## OCTAVE
+The Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE) is a 
+security framework for identifying, addressing and managing information security assessments and and risk-based planning. It consists of tools, technologies and procedures for helping organizations identify and evaluate the security risks they face. OCTAVE is primarily targeted at organization-related security risks rather than technological risks.
+
+## VAST
+VAST (Visual, Agile and Simple Threat modelling) is aimed at automated threat analysis across the enterprise infrastructure and entire SDLC. It is based on [ThreatModeler](https://www.threatmodeler.com/) tool.
