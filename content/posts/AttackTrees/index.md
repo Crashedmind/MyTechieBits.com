@@ -50,26 +50,25 @@ So the first attack tree to be addressed should be one that focuses on PIN keys 
 
 The sub-nodes drill down into the details of how this attack objective can be achieved 
 e.g. to to get the PIN number, one can do any one of the following:
-
-"get the pin via keypad h/w" i.e. a hardware attack
-"Get PIN keys" i.e. keys used to encrypt PINS i.e. an indirect attack
-"Get PIN via malicious code" i.e. a software attack
+- "get the pin via keypad h/w" i.e. a hardware attack
+- "Get PIN keys" i.e. keys used to encrypt PINS i.e. an indirect attack
+- "Get PIN via malicious code" i.e. a software attack
 
 A successful attack path is from the top of the graph to any node on the bottom of a branch.
 
 An assessment can be made of how likely the various attack paths are and therefore which ones need to be addressed with highest priority.
 
-## And Or
+## And Or Nodes
 Nodes can be And'd or Or'd
 
-### Or
+### Or Nodes
 Nodes are normally assumed to be OR'd i.e. one or the other path can be followed to achieve the parent goal. 
 e.g. To "Get PINs via keypad h/w" one can
 - "Add KeyPad h/w bug without causing tamper"
 - OR
 - "Observe PIN entry"
 
-
+### And Nodes
 Nodes can be AND'd together to show that 2 or more paths are required to complete the goal.
 Such nodes are prefixed with an "&".
 e.g. To "Add KeyPad h/w bug without causing tamper" one can

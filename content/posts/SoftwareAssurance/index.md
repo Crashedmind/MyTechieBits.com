@@ -1,7 +1,7 @@
 ---
 path: "/SoftwareAssurance"
 cover: "../SoftwareAssurance/swass.png"
-date: "2019-01-12"
+date: "2019-04-12"
 title: "Software Assurance"
 tags: ['Software Assurance']
 published: true
