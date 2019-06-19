@@ -7,6 +7,8 @@ tags: ['Books',  'Trello']
 published: true
 ---
 
+Trello has many uses - including as a virtual bookshelf organised by the value it delivers to you.
+
 Organize books by value to you
 1. the area you want to learn about 
 2. the value of each book in that area
