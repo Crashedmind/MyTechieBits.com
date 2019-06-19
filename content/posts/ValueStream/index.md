@@ -1,7 +1,7 @@
 ---
 path: "/ValueStream"
 cover: "../ValueStream/valuestream.png"
-date: "2019-04-18"
+date: "2019-01-18"
 title: "Value Stream Mapping"
 tags: ['Valuestream', 'LEAN', 'Agile']
 published: true
@@ -13,7 +13,7 @@ The value stream is the most important organizational construct in [SAFe](http:/
 
 *“Taking a systems view of value delivery" means understanding all the steps from ideation and feature approval to development, through deployment, all the way to release. The total average time for all these steps, including the delay times, is the average time to market for any new feature."*
 
-This gives us one more, important tool in our toolbox. That is the process of value stream mapping, an analytical process teams can use to ﬁrst understand, and then improve, time to market.
+Value stream mapping is an analytical process teams can use to ﬁrst understand, and then improve, time to market.
 
 
 Refs: 
