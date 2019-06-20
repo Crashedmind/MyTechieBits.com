@@ -1,9 +1,10 @@
 ---
 path: "/Jam"
-cover: "../Jam/speed.png"
-date: "2018-01-01
-title: "Blog Platform"
-tags: ['JAM', 'Gatsby']
+cover: "../Jam/header.png"
+date: "2018-01-01"
+title: "Static Site Generation - again"
+tags: ['JAM', 'SSG']
+
 published: true
 ---
 
