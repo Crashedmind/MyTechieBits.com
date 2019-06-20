@@ -1,6 +1,6 @@
 ---
 path: "/Jam"
-cover: "../Jam/jira.png"
+cover: "../Jam/speed.png"
 date: "2018-01-01
 title: "Blog Platform"
 tags: ['JAM', 'Gatsby']
