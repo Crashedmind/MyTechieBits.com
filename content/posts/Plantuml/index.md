@@ -12,8 +12,9 @@ PlantUML can be used to create several UML diagram types from a simple text file
 
 
 - For standard UML diagrams (class diagrams, sequence diagrams) auto-generation is a good option. 
-- For non-UML compliant diagrams, where the arrangement of parts is important to convey information, a simple Box-and-Line diagram that is manually drawn is a better option.
 - For C4 architecture (Context, Container, Component, Class), it is ideal and [C4 templates exist](https://www.mytechiebits.com/C4).
+- For complex non-UML diagrams, where the arrangement of parts is important to convey information, it may be better to just draw a simple Box-and-Line diagram.
+
 
 
 
@@ -59,20 +60,9 @@ VSCode supports snippets that predict words as you type.
 VSCcode Snippets for C4 can be installed per 
 See https://github.com/RicardoNiepel/C4-PlantUML#snippets-for-visual-studio-code 
 
-# PlantUML Sprites
-PlantUML supports [sprites](http://plantuml.com/sprite) (small graphic elements).
-Given we want to make diagrams communicate quickly and clearly, using sprites (rather than just boxes) is very effective.
-
-
-## PlantUML Sprite Exmaples
-Some good examples of where PlantUML Sprites are used:
-* [Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML)
-* https://github.com/rabelenda/cicon-plantuml-sprites/tree/master/sprites that includes Devicons, Material, Weather icons.
-
 
 # Plantuml for AWS
-
-https://github.com/milo-minderbinder/AWS-PlantUML plantuml AWS
+[Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML) uses the icon set from AWS and converts these to sprites for use with PlantUML.
 
 ```
 git clone git@github.com:milo-minderbinder/AWS-PlantUML.git
@@ -87,7 +77,81 @@ git clone git@github.com:milo-minderbinder/AWS-PlantUML.git
 ![](./aws-big.png)
 
 
-https://github.com/tupadr3/plantuml-icon-font-sprites 
+
+
+
+
+# PlantUML Sprites
+PlantUML supports [sprites](http://plantuml.com/sprite) (small graphic elements).
+Given we want to make diagrams communicate quickly and clearly, using sprites (rather than just boxes) is very effective.
+
+
+## PlantUML Sprite Examples
+Some good examples of where PlantUML Sprites are used:
+* [Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML)
+* https://github.com/rabelenda/cicon-plantuml-sprites/tree/master/sprites that includes Devicons, Material, Weather icons.
+
+
+## PlantUML Create a Sprite
+It's easy to create your own sprites from existing icons.
+
+### Start with a 100x100 person icon png
+
+![](./C4person100.png)
+
+
+### Convert to sprite of different resolutions as follows
+Download plantuml.jar
+
+```
+ java -jar plantuml.jar -encodesprite 4 images/C4person100.png > C4person4.sprite
+ java -jar plantuml.jar -encodesprite 16 images/C4person100.png > C4person16.sprite
+ java -jar plantuml.jar -encodesprite 8 images/C4person100.png > C4person8.sprite
+```
+
+![](./sprite.png)
+
+
+
+### Create Diagram with our Sprites
+See source code 
+
+```
+@startuml
+sprite $C4person100Small [16x16/16] {
+0000004774000000
+0000067777600000
+0000377777720000
+0000477777740000
+0000377777730000
+0000077777600000
+0244467777644420
+3777777777777773
+6777777777777776
+7777777777777777
+7777777777777777
+7777777777777777
+7777777777777777
+7777777777777777
+5777777777777774
+0477777777777640
+}
+
+sprite $C4person100Big [100x100/16] {
+0000000000000000000000000000000000000000000013456666543100000000000000000000000000000000000000000000
+# removed rest of sprite here for clarity
+
+Bob : <$C4person100Small> Small
+Alice : <$C4person100Big> Big
+
+Alice -> Bob 
+@enduml
+
+
+```
+
+![](./bigsmall.png)
+
 
 
 # References
@@ -95,7 +159,7 @@ https://github.com/tupadr3/plantuml-icon-font-sprites
 2. https://real-world-plantuml.com/umls/4619683198140416 is a PlantUML showcase
 3. https://www.planttext.com/ free online site where you can copyNpaste the text description to auto-generate a diagram
 4. https://www.websequencediagrams.com/ free online site where you can copyNpaste the text description to auto-generate a diagram
-5. https://www.npmjs.com/package/c4builder autodoc 
+5. https://www.npmjs.com/package/c4builder NPM package using autodoc and C4 template 
 6. https://codurance.com/2019/03/17/just-enough-technical-documentation/ Good article that makes reference to a good book "Agile Modelling - Scott Ambler"
 
 
