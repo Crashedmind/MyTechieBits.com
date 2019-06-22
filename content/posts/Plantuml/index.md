@@ -62,7 +62,7 @@ See https://github.com/RicardoNiepel/C4-PlantUML#snippets-for-visual-studio-code
 
 
 # Plantuml for AWS
-[Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML) uses the icon set from AWS and converts these to sprites for use with PlantUML.
+[Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML) uses the [icon set from AWS](https://aws.amazon.com/architecture/icons/) and converts these to sprites for use with PlantUML.
 
 ```
 git clone git@github.com:milo-minderbinder/AWS-PlantUML.git
@@ -164,3 +164,9 @@ Alice -> Bob
 
 
 
+http://www.opensecurityarchitecture.org/cms/library/icon-library
+
+This means that you are welcome to use these materials in your work as long as you:
+
+share any improvements back with the community on the same terms.
+credit the materials used to Open Security Architecture and provide a link to this site
