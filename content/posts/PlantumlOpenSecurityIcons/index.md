@@ -1,12 +1,13 @@
 ---
-path: "/Plantuml"
-cover: "../Plantuml/keystore.png"
-date: "2019-06-21"
-title: "PlantUML"
-tags: ['PlantUML', 'Architecture']
+path: "/PlantumlOSA"
+cover: "../PlantumlOSA/example.png"
+date: "2019-06-22"
+title: "PlantUML Open Security Architecture Icons"
+tags: ['PlantUML', 'Architecture', 'OSA']
 
 published: true
 ---
+
 [Open Security Architecture](http://www.opensecurityarchitecture.org/) (OSA) is an excellent resource for security architects providing a catalog of controls, patterns, and requirements from numerous standards, governance frameworks, legislation and regulations. See "[why have OSA?](http://www.opensecurityarchitecture.org/cms/about/why-have-osa)".
 
 Resources include a [security architecture icon library](http://www.opensecurityarchitecture.org/cms/library/icon-library) available under a "[Creative Commons share-alike license](http://www.opensecurityarchitecture.org/cms/about/license-terms)".
