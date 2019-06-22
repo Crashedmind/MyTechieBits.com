@@ -12,8 +12,10 @@ published: true
 
 Resources include a [security architecture icon library](http://www.opensecurityarchitecture.org/cms/library/icon-library) available under a "[Creative Commons share-alike license](http://www.opensecurityarchitecture.org/cms/about/license-terms)".
 
-Wouldn't it be great if this icon set was available for PlantUML so I, and other architects, could use it with our PlantUML diagrams....
+Wouldn't it be great if this icon set was available for PlantUML so I, and other architects, could use it with our PlantUML diagrams.... Indeed, so here it is:
+https://github.com/Crashedmind/PlantUML-opensecurityarchitecture-icons/tree/master/OSA-Plantuml-Icons 
 
+The next sections walk thru how this was created.
 (See https://www.mytechiebits.com/Plantuml for an introduction to PlantUML)
 
 # Converting the icon set to PlantUML Sprites
@@ -48,6 +50,7 @@ python3 puml.py -c ./puml.ini ../OpenSecIcons/icons/ #icons output to ./dist/osa
 
 ## Example PlantUML Code and Diagram using these PlantUML icons
 ![](example.png)
+*screenshot from VisualStudio Code*
 
 
 
