@@ -1,6 +1,6 @@
 ---
-path: "/PlantumlOSA"
-cover: "../PlantumlOSA/example.png"
+path: "/PlantumlOpenSecurityIcons"
+cover: "../PlantumlOpenSecurityIcons/example.png"
 date: "2019-06-22"
 title: "PlantUML Open Security Architecture Icons"
 tags: ['PlantUML', 'Architecture', 'OSA']
@@ -24,6 +24,8 @@ Wouldn't it be great if this icon set was available for PlantUML so I, and other
 ## Pre-Requisites
 1. Python 3
    
+
+## Commands
 ```
 
 # Get OSA icons
@@ -44,7 +46,7 @@ python3 puml.py -c ./puml.ini ../OpenSecIcons/icons/ #icons output to ./dist/osa
 
 
 
-## Example Output
+## Example PlantUML Code and Diagram using these PlantUML icons
 ![](example.png)
 
 
