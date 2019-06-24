@@ -7,6 +7,8 @@ tags: ['C4', 'Architecture']
 published: true
 ---
 
+> “Big design up front is dumb, but doing no design up front is even dumber.”
+Dave Thomas
 
 The [C4 Model](https://c4model.com/) is a lightweight software architecture description method. It consists of a set of 4 diagrams that describe the **static** structure of a software system. 
 

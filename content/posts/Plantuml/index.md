@@ -164,9 +164,3 @@ Alice -> Bob
 
 
 
-http://www.opensecurityarchitecture.org/cms/library/icon-library
-
-This means that you are welcome to use these materials in your work as long as you:
-
-share any improvements back with the community on the same terms.
-credit the materials used to Open Security Architecture and provide a link to this site
