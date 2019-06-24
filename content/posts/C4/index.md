@@ -32,6 +32,9 @@ components and their relationships.
 The [CheatSheet](http://www.codingthearchitecture.com/2017/04/27/visualising_and_documenting_software_architecture_cheat_sheets.html) gives a good summary of the C4 model and diagrams.
 
 
+# Video Presentation
+See [youtube video from NDC2017  conference](https://www.youtube.com/watch?v=Ym9nhVZs89o) by Simon Brown on C4 for visualisation.
+
 # Related Methods
 There are a number of related models and templates:
 
