@@ -153,6 +153,35 @@ Alice -> Bob
 ![](./bigsmall.png)
 
 
+# PlantUML HyperLinks
+PlantUML supports hyperlinks in output SVG images.
+This allows diagrams to be linked together, and for a user to easily navigate by clicking around per 
+[Shneiderman's mantra](http://www.ifp.illinois.edu/nabhcs/abstracts/shneiderman.html):
+> *Overview first, zoom and filter, then details-on-demand*
+
+
+[![](links.png)](../Plantuml/links.svg)
+
+```
+@startuml
+actor Bob [[http://plantuml.com/sequence-diagram]]
+actor "This is [[http://plantuml.com/sequence-diagram Alice]] actor" as Alice
+Bob -> Alice [[http://plantuml.com/index]] : hello
+note left [[http://plantuml.com/index]]
+  a note with a link
+end note
+Alice -> Bob : hello with [[http://plantuml.com/index{Tooltip for message} some link]]
+note right [[http://plantuml.com/index]] : another note
+note left of Bob
+' You can use [[http://plantuml.com/index links in notes]] also.
+end note
+@enduml
+
+
+```
+
+
+
 
 # References
 1. http://plantuml.com/ homepage
