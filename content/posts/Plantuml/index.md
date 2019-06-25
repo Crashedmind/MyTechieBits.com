@@ -160,7 +160,7 @@ This allows diagrams to be linked together, and for a user to easily navigate by
 > *Overview first, zoom and filter, then details-on-demand*
 
 
-[![](links.png)](../Plantuml/links.svg)
+[![](links.png)](https://github.com/Crashedmind/MyTechieBits.com/blob/master/content/posts/Plantuml/links.svg)
 
 ```
 @startuml
