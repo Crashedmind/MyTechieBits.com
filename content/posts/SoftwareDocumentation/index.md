@@ -100,8 +100,13 @@ The above HTML document is generated from this simple source file that contains:
 3. PlantUML Diagram
 4. Markdown markup
 
-Each section is shown separately below this full source example:
+We run doxygen in the source code directory:
+```
+$ doxygen ./configfilename 
+```
 
+### Source Code Example
+Source Code directory contains our source file:
 
 ```
 /** 
@@ -141,9 +146,10 @@ unsigned short int add (unsigned short int A, unsigned short int B)
 }
 
 ```
+Each section of the above source file is shown separately below:
 
 
-Source code
+### Source code
 
 ```
 unsigned short int add (unsigned short int A, unsigned short int B)
@@ -152,7 +158,7 @@ unsigned short int add (unsigned short int A, unsigned short int B)
 }
 ```
 
-Doxygen Tags
+### Doxygen Tags
 ```
 /** 
  * 
@@ -170,7 +176,7 @@ Doxygen Tags
 
 ```
 
-Markdown
+### Markdown
 ```
 Value  | Description
 ------------- | -------------
@@ -180,7 +186,7 @@ A+B | The sum of the 2 input parameters
 ```
 
 
-PlantUML
+### PlantUML
 ```
 @startuml
 
