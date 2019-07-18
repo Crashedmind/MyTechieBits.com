@@ -61,7 +61,10 @@ VSCcode Snippets for C4 can be installed per
 See https://github.com/RicardoNiepel/C4-PlantUML#snippets-for-visual-studio-code 
 
 
-# Plantuml for AWS
+# PlantUML 
+Some standard libaries are available for PlantUML. See http://plantuml.com/stdlib for what is supported in official release of PlantUML.
+
+## Plantuml for AWS
 [Plantuml for AWS](https://github.com/milo-minderbinder/AWS-PlantUML) uses the [icon set from AWS](https://aws.amazon.com/architecture/icons/) and converts these to sprites for use with PlantUML.
 
 ```
@@ -69,11 +72,11 @@ git clone git@github.com:milo-minderbinder/AWS-PlantUML.git
 
 ```
 
-## Simple Example
+### Simple Example
 ![](./aws.png)
 
 
-## More Complex Example
+### More Complex Example
 ![](./aws-big.png)
 
 
