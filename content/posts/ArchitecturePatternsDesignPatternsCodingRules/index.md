@@ -7,7 +7,9 @@ tags: ['Architecture Pattern', 'Architecture', 'Design', 'Design Pattern', 'Codi
 published: true
 ---
 
-Principles provide the high level guidelines for a system. Patterns can be applied to implement these principles and allow us to use known good solutions for known problems.
+**Principles** provide the high level guidelines for a system. 
+
+**Patterns** can be applied to implement these principles and allow use of known good solutions for common problems.
 
 
 
