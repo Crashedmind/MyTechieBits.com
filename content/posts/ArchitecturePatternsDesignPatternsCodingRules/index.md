@@ -1,29 +1,12 @@
 ---
 path: "/ArchitecturePatternsDesignPatternsCodingRules"
-cover: "../ArchitecturePatternsDesignPatternsCodingRules/DoxygenExample.png"
+cover: "../ArchitecturePatternsDesignPatternsCodingRules/Security.jpg"
 date: "2019-07-19"
 title: "Architecture Patterns Design Patterns Coding Rules"
 tags: ['Architecture Pattern', 'Architecture', 'Design', 'Design Pattern', 'Coding Rules']
 published: true
 ---
 
-Principles, Patterns and Rules represent different levels of guidance detail. 
-
-
-Design **Patterns** provides low-level solutions related to implementation, of commonly occurring object-oriented problems. In other words, design pattern suggests a specific implementation for the specific object-oriented programming problem. 
-
-
-For example, if you want to create a class that can only have one object at a time, then you can use the Singleton design pattern which suggests the best way to create a class that can only have one object. Design patterns are tested by others and are safe to follow, e.g. Gang of Four patterns: Abstract Factory, Factory, Singleton, Command, etc.
-
-
-
-
-| Term                 |                                                                                                                           Definition                                                                                                                           | Example |
-|----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Principle           |    Provide high level guidelines to design better software applications.                                                                                                                                                                                                                                                            |         |
-| Architecture Pattern | Expresses a fundamental structural organization or schema for software systems. It provides a set of predefined subsystems, specifies their responsibilities, and includes rules and guidelines for organizing the relationships between them.                 |         |
-| Design Patterns      | Provides a scheme for refining the subsystems or components of a software system, or the relationships between them. It describes a commonly recurring structure of communicating components that solves a general design problem within a particular context. |         |
-| Programming Rules         |   Implementation specific constraints for a specific programming language.                                                                                                                                                                                                                                                              |         |
 
 # Principles
 
@@ -58,7 +41,7 @@ Some of the earliest secure software design principles were proposed by Saltzer 
 
    1.2 Where the sensitive data exists or flows -  the code or interfaces that touch the sensitive data.
 
-## SOLID
+## SOLID Principles
 SOLID is an acronym for the first 5 principles of object-oriented design:
 
 1. SRP The Single Responsibility Principle: -- a class should have one, and only one, reason to change.
@@ -73,38 +56,46 @@ SOLID is an acronym for the first 5 principles of object-oriented design:
 
 # Patterns
 
-The term "design pattern" is often used to refer to any pattern which addresses issues of software architecture, design, or programming implementation. 
-
 > "Each pattern describes a problem which occurs over and over again in our
 environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.” Christopher Alexander
+
+The term "design pattern" is often used to refer to any pattern which addresses issues of **software architecture, design, or programming implementation**. 
+
+
+[Secure Design Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115) gives the following defincitions.
+
+
+| Pattern                 |                                                        Definition       | Example |
+|----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Architecture Pattern | Expresses a fundamental structural organization or schema for software systems. It provides a set of predefined subsystems, specifies their responsibilities, and includes rules and guidelines for organizing the relationships between them.                 |  PrivSep (Privilege Separation)       |
+| Design Patterns      | Provides a scheme for refining the subsystems or components of a software system, or the relationships between them. It describes a commonly recurring structure of communicating components that solves a general design problem within a particular context. |  Secure Factory         |
+| Implementation Pattern          |   Implementation-level patterns address low-level security issues. Patterns in this class are usually applicable to the implementation of specific functions or methods in the system. Implementation-level patterns address the same problem set addressed by the CERT Secure Coding Standards [CERT 2009a] and are often linked to a corresponding secure coding guideline                                                                                                                                |  Clear Sensitive Information       |
+
+
 
 
 
 ## Architecture Patterns
-
-
-An Architecture Pattern expresses a fundamental structural organization or schema for software systems. It provides a set of predefined subsystems, specifies their responsibilities, and includes rules and guidelines for organizing the relationships between them.
-
 Architectural-level patterns focus on the high-level allocation of responsibilities between different components of the system and define the interaction between
-those high-level components.
+those high-level components. 
+ 
 
 
 ### SEI Secure Architecture Patterns 
-1. Distrustful Decomposition 6
-2. PrivSep (Privilege Separation) 9
-3. Defer to Kernel 
+[SEI Secure Architecture Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115) are as follows:
+
+
+
+| Architecture Pattern Name                                               | Details                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Distrustful Decomposition (aka Privilege reduction) | Move separate functions into mutually untrusting programs, thereby reducing the • attack surface of the individual programs that make up the system • functionality and data exposed to an attacker if one of the mutually untrusting programs is compromised                                                                                                                                                                                       |
+| PrivSep (Privilege Separation)                      | Reduce the amount of code that runs with special privilege without affecting or limiting the functionality of the program. The PrivSep pattern is a more specific instance of the Distrustful Decomposition pattern.                                                                                                                                                                                                                                |
+| Defer to Kernel                                     | Clearly separate functionality that requires elevated privileges from functionality that does not require elevated privileges and to take advantage of existing user verification functionality available at the kernel level. Using existing user verification kernel functionality leverages the kernel’s established role in arbitrating security decisions rather than reinventing the means to arbitrate security decisions at the user level  |
+
+
 
 
 ## Design Patterns
-A Design Pattern provides a scheme for refining the subsystems or components of a 
-software system, or the relationships between them. It describes a commonly recurring structure of communicating components that solves a general design problem within a particular context.
-
-The term "design pattern" is often used to refer to any pattern which addresses issues of software architecture, design, or programming implementation. In Pattern-Oriented Software Architecture: A System of Patterns, the authors define these three types of patterns as follows:
-
-
-Design-level patterns describe how to design and implement pieces
-of a high-level system component, that is, they address problems in the internal design of a single high-level component, not the definition and interaction of high-level components
-themselves. The design-level patterns defined in this document are
 
 ### SEI Secure Design Patterns
 [SEI Secure Design Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115) defines the following Secure Design Patterns:
@@ -113,12 +104,7 @@ themselves. The design-level patterns defined in this document are
 3. Secure Builder Factory
 4. Secure Chain of Responsibility
 5. Secure State Machine
-6. Secure Visitor 
-
-
-[SEI Secure Design Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115) describes a set of general solutions to software security problems that can be applied in many different situations.
-
-# Programming Rules
+6. Secure Visitor                                                                                                                                                                              |
 
 
 # References
@@ -139,3 +125,4 @@ security. In Fourth Conference on Pattern Languages of Programs, 1998.
 
 
 
+<a href="https://www.freepik.com/free-photos-vectors/background"> Image by freepik - www.freepik.com</a>
