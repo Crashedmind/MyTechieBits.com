@@ -17,26 +17,17 @@ Some of the earliest secure software design principles were proposed by [Saltzer
 ## Saltzer Secure Software Design Principles
 
 
-1 Economy of mechanism: Keep the design as simple and small as possible.
-
-2 Fail-safe defaults: Base access decisions on permission rather than exclusion.
-
-3 Complete mediation: Every access to every object must be checked for authority.
-
-4 Open design: The design should not be secret.
-
-5 Separation of privilege: Where feasible, a protection mechanism that requires two keys to unlock it is more robust and flexible than one that allows access to the presenter of only a single key.
-
-6 Least privilege: Every program and every user of the system should operate using the least set of privileges necessary to complete the job.
-
-7 Least common mechanism: Minimize the amount of mechanism common to more than one user and depended on by all users.
-
-8 Psychological acceptability: It is essential that the human interface be designed for ease of use, so that users routinely and automatically apply the protection mechanisms correctly.
-
-9 Work factor: Compare the cost of circumventing the mechanism with the resources of a potential attacker.
-
-10 Compromise recording: It is sometimes suggested that mechanisms that reliably record that a compromise of information has occurred can be used in place of more elaborate mechanisms that completely prevent loss.
-
+| Economy of mechanism        | Keep the design as simple and small as possible                                                                                                                                                                     |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fail-safe defaults          | Base access decisions on permission rather than exclusion                                                                                                                                                           |
+| Complete mediation          | Every access to every object must be checked for authority                                                                                                                                                          |
+| Open design                 | Beside source code files in GIT                                                                                                                                                                                     |
+| Separation of privilege     | Where feasible, a protection mechanism that requires two keys to unlock it is more robust and flexible than one that allows access to the presenter of only a single key                                            |
+| Least privilege             | Every program and every user of the system should operate using the least set of privileges necessary to complete the jobMinimize the amount of mechanism common to more than one user and depended on by all users |
+| Least common mechanism      | Minimize the amount of mechanism common to more than one user and depended on by all users                                                                                                                          |
+| Psychological acceptability | It is essential that the human interface be designed for ease of use, so that users routinely and automatically apply the protection mechanisms correctly                                                           |
+| Work factor                 | Compare the cost of circumventing the mechanism with the resources of a potential attacker                                                                                                                          |
+| Compromise recording        | It is sometimes suggested that mechanisms that reliably record that a compromise of information has occurred can be used in place of more elaborate mechanisms that completely prevent loss                         |
 ### Other Useful Secure Software Development Principles
 1. Minimize the footprint of sensitive data - in time and space
    
@@ -47,12 +38,13 @@ Some of the earliest secure software design principles were proposed by [Saltzer
 ## SOLID Principles
 SOLID is an acronym for the first 5 principles of object-oriented design:
 
-1. SRP The Single Responsibility Principle: -- a class should have one, and only one, reason to change.
-2. OCP The Open Closed Principle: -- you should be able to extend a class's behavior, without modifying it.
-3. LSP The Liskov Substitution Principle: -- derived classes must be substitutable for their base classes.
-4. ISP The Interface Segregation Principle: -- make fine grained interfaces that are client specific.
-5. DIP The Dependency Inversion Principle -- depend on abstractions not on concrete implementations.
-
+| Principle                               | Definition                                                            |
+|-----------------------------------------|-----------------------------------------------------------------------|
+| **S**RP The Single Responsibility Principle | Keep the design as simple and small as possible                       |
+| **O**CP The Open Closed Principle           | you should be able to extend a class's behavior, without modifying it |
+| **L**SP The Liskov Substitution Principle   | derived classes must be substitutable for their base classes          |
+| **I**SP The Interface Segregation Principle | make fine grained interfaces that are client specific                 |
+| **D**IP The Dependency Inversion Principle  | depend on abstractions not on concrete implementations                |
 
 
 
