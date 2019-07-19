@@ -12,7 +12,7 @@ Principles provide the high level guidelines for a system. Patterns can be appli
 
 
 # Principles
-Some of the earliest secure software design principles were proposed by Saltzer in the 1970's https://en.wikipedia.org/wiki/Saltzer_and_Schroeder%27s_design_principles
+Some of the earliest secure software design principles were proposed by [Saltzer in the 1970's](https://en.wikipedia.org/wiki/Saltzer_and_Schroeder%27s_design_principles): 
 
 ## Saltzer Secure Software Design Principles
 
@@ -99,6 +99,8 @@ those high-level components.
 
 
 ## Design Patterns
+
+One of the better known set of Design Patterns for Security is [SEI Secure Design Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115):
 
 ### SEI Secure Design Patterns
 [SEI Secure Design Patterns](https://resources.sei.cmu.edu/library/asset-view.cfm?assetid=9115) defines the following Secure Design Patterns:
