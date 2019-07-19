@@ -2,10 +2,13 @@
 path: "/ArchitecturePatternsDesignPatternsCodingRules"
 cover: "../ArchitecturePatternsDesignPatternsCodingRules/Security.jpg"
 date: "2019-07-19"
-title: "Architecture Patterns Design Patterns Coding Rules"
+title: "Principles and Patterns For Secure Software"
 tags: ['Architecture Pattern', 'Architecture', 'Design', 'Design Pattern', 'Coding Rules']
 published: true
 ---
+
+Principles provide the high level guidelines for a system. Patterns can be applied to implement these principles and allow us to use known good solutions for known problems.
+
 
 
 # Principles
