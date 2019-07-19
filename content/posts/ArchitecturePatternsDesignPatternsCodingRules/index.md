@@ -12,10 +12,10 @@ Principles provide the high level guidelines for a system. Patterns can be appli
 
 
 # Principles
-
+Some of the earliest secure software design principles were proposed by Saltzer in the 1970's https://en.wikipedia.org/wiki/Saltzer_and_Schroeder%27s_design_principles
 
 ## Saltzer Secure Software Design Principles
-Some of the earliest secure software design principles were proposed by Saltzer in the 1970's https://en.wikipedia.org/wiki/Saltzer_and_Schroeder%27s_design_principles
+
 
 1 Economy of mechanism: Keep the design as simple and small as possible.
 
@@ -107,7 +107,7 @@ those high-level components.
 3. Secure Builder Factory
 4. Secure Chain of Responsibility
 5. Secure State Machine
-6. Secure Visitor                                                                                                                                                                              |
+6. Secure Visitor                                                                                                                                                                              
 
 
 # References
