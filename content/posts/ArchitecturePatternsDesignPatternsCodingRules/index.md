@@ -17,8 +17,9 @@ Some of the earliest secure software design principles were proposed by [Saltzer
 ## Saltzer Secure Software Design Principles
 
 
-| Economy of mechanism        | Keep the design as simple and small as possible                                                                                                                                                                     |
+| Principle       | Definition                                                                                                                                                                    |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Economy of mechanism          | Keep the design as simple and small as possible                                                                                                                                                            |
 | Fail-safe defaults          | Base access decisions on permission rather than exclusion                                                                                                                                                           |
 | Complete mediation          | Every access to every object must be checked for authority                                                                                                                                                          |
 | Open design                 | Beside source code files in GIT                                                                                                                                                                                     |
