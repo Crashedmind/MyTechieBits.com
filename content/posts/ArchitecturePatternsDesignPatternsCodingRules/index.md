@@ -24,7 +24,7 @@ Some of the earliest secure software design principles were proposed by [Saltzer
 | Economy of mechanism          | Keep the design as simple and small as possible                                                                                                                                                            |
 | Fail-safe defaults          | Base access decisions on permission rather than exclusion                                                                                                                                                           |
 | Complete mediation          | Every access to every object must be checked for authority                                                                                                                                                          |
-| Open design                 | Beside source code files in GIT                                                                                                                                                                                     |
+| Open design                 |      The design should not be secret                                                                                                                                                                                |
 | Separation of privilege     | Where feasible, a protection mechanism that requires two keys to unlock it is more robust and flexible than one that allows access to the presenter of only a single key                                            |
 | Least privilege             | Every program and every user of the system should operate using the least set of privileges necessary to complete the jobMinimize the amount of mechanism common to more than one user and depended on by all users |
 | Least common mechanism      | Minimize the amount of mechanism common to more than one user and depended on by all users                                                                                                                          |
@@ -109,19 +109,15 @@ One of the better known set of Design Patterns for Security is [SEI Secure Desig
 
 # References
 
-1. M. Schumacher. Security patterns: integrating security and systems engineering. Wiley
-series in software design patterns. John Wiley & Sons, 2006. URL: http://books.
-google.com/books?id=gtpQAAAAMAAJ
+1. M. Schumacher. [Security patterns: integrating security and systems engineering](https://www.amazon.com/Security-Patterns-Integrating-Systems-Engineering/dp/0470858842/). Wiley
+series in software design patterns. John Wiley & Sons, 2006. 
 2. Chad Dougherty, Kirk Sayre, Robert C. Seacord, David Svoboda, and Kazuya Togashi.
-Secure design patterns. Technical report, Software Engineering Institute, Carnegie Mellon,October 2009. URL: http://www.sei.cmu.edu/reports/09tr010.pdf.
-3. 3/E. Gamma, R. Johnson, J. Vlissides, and R. Helm. Design Patterns: Elements of
-Reusable Object-Oriented Software. Addison-Wesley, 1995. URL: http://books.
-google.com/books?id=iyIvGGp2550C.
-4. John Viega and Gary McGraw. Building Secure Software - How to Avoid Security
-Problems the Right Way. Addison-Wesley, September 2002
+[Secure design patterns. Technical report](http://www.sei.cmu.edu/reports/09tr010.pdf.), Software Engineering Institute, Carnegie Mellon,October 2009. 
+3. 3/E. Gamma, R. Johnson, J. Vlissides, and R. Helm. [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)  Addison-Wesley, 1995.
+4. John Viega and Gary McGraw. https://www.amazon.com/Building-Secure-Software-Security-Documents-ebook/dp/B003CW67YQ. Addison-Wesley, September 2002
 5. Joseph Yoder and Jeffrey Barcalow. Architectural patterns for enabling application
 security. In Fourth Conference on Pattern Languages of Programs, 1998.
-6. ISO/IEC TS 17961 C Secure Coding Rules. All rules meant to be enforceable by static analysis
+6. [ISO/IEC TS 17961 C Secure Coding Rules](https://www.iso.org/standard/61134.html). All rules meant to be enforceable by static analysis
 
 
 
