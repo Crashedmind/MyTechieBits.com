@@ -31,7 +31,11 @@ We want
 The Journey to Documentation as Code began over a decago ago when either no documentation, or MS Word Documents were common. In more orgainised companies, these documents were maintained in MS Sharepoint.
 
 ## Sharepoint and MSWord Documents
-Many years back, we made the transition from MS Word documents to Wikis - Living Documentation. (TODO add ref to living docs - I was a strong proponent getting people from documents in sharepoint)
+Many years back, we made the transition from MS Word documents to Wikis - Living Documents. I was a strong proponent getting people from documents in sharepoint.
+
+
+![](LivingDocs1.png)
+![](LivingDocs2.png)
 
 ## Confluence
 Today we use Confluence which makes it easy for everyone to add content or provide comments on it.
@@ -113,6 +117,8 @@ Github supports <a href="https://github.com/github/markup">several markup langua
   </tr>
 </table>
 
+
+[Bitbucket supports ](https://confluence.atlassian.com/bitbucket/wikis-221449748.html) Markdown, reStructured Text, Textile and Creole
 
 
 # Toolset
@@ -284,3 +290,14 @@ The page content
 # More content to come
 1. Add a PlantUML Diagram Source File
 2. Interesting Sphinx Features
+
+# Plantuml
+
+https://anaconda.org/terradue/sphinxcontrib-plantuml
+conda install -c terradue sphinxcontrib-plantuml 
+https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/UsingGraphicsAndDiagramsInSphinx.html
+https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html
+
+# References
+1. https://docker.github.io/compose/install.md
+
