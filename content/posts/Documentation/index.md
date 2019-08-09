@@ -287,17 +287,85 @@ The page content
 
 
 
-# More content to come
-1. Add a PlantUML Diagram Source File
-2. Interesting Sphinx Features
-
 # Plantuml
+sphinxcontrib.plantuml requires plantuml which requires java and graphviz.
 
-https://anaconda.org/terradue/sphinxcontrib-plantuml
-conda install -c terradue sphinxcontrib-plantuml 
-https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/UsingGraphicsAndDiagramsInSphinx.html
-https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/ShowingCodeExamplesInSphinx.html
+## Install Java
+
+```
+mkdir -p /usr/share/man/man1 # otherwise the java install will fail on docker!
+apt-get update
+apt-get upgrade
+apt install default-jre
+```
+
+## Install Plantuml.jar
+Download Plantuml.jar manually from plantuml.com
+Copy plantuml.jar to e.g. /usr/local/bin/plantuml.jar
+```
+apt-get install graphviz # required by plantuml
+
+java -jar /usr/local/bin/plantuml.jar -testdot
+The environment variable GRAPHVIZ_DOT has been set to /usr/bin/dot
+Dot executable is /usr/bin/dot
+Dot version: dot - graphviz version 2.40.1 (20161225.0304)
+Installation seems OK. File generation OK
+
+echo "export GRAPHVIZ_DOT=/usr/bin/dot" >  /etc/profile.d/sphinx.sh
+chmod +x /etc/profile.d/sphinx.sh 
+
+```
+
+  
+
+
+### Install sphinxcontrib.plantuml 
+
+```
+pip install sphinxcontrib-plantuml
+```
+
+### Add plantuml and dot to Sphinx conf.py
+```
+extensions = [ "breathe",
+              "exhale",
+              "sphinxcontrib.plantuml",
+              "sphinx.ext.graphviz"
+]
+
+plantuml = 'java -jar /usr/local/bin/plantuml.jar'
+
+```
+
+
+# Create Documentation with Rest, PlantUML diagrams, Dot diagrams
+```
+/home/cpp/docs#sphinx-build -b html ./ build/
+
+```
+
+In this case, we included the source code of the diagrams in the RST file. 
+This results in image files being created in build/_images/.
+It is better to have the diagram source separate and output to known image file names. 
+This allows the image to be included multiple times, and to be rendered on GitHub, Bitbucket.
+
+
+![](SphinxPlantuml.png)
+
+
+# ToDo
+1. Use the Plantuml styling per https://daniel-siepmann.de/Posts/2016/06/11-read-the-docs-sphinx-plantuml-workflow.html#plantuml
+2. change plantuml to output images of known name
+3. add other icon libaries
+4. publish docker container via compose
+
+
+
 
 # References
 1. https://docker.github.io/compose/install.md
+2. https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/UsingGraphicsAndDiagramsInSphinx.html
+3. https://daniel-siepmann.de/Posts/2016/06/11-read-the-docs-sphinx-plantuml-workflow.html#plantuml
+
+
 
