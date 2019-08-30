@@ -366,6 +366,7 @@ This allows the image to be included multiple times, and to be rendered on GitHu
 1. https://docker.github.io/compose/install.md
 2. https://build-me-the-docs-please.readthedocs.io/en/latest/Using_Sphinx/UsingGraphicsAndDiagramsInSphinx.html
 3. https://daniel-siepmann.de/Posts/2016/06/11-read-the-docs-sphinx-plantuml-workflow.html#plantuml
+4. https://www.kernel.org/doc/html/v4.10/index.html is the linux kernel documentation using Sphinx as described in https://www.kernel.org/doc/html/v4.14/doc-guide/sphinx.html
 
 
 
