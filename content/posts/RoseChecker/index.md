@@ -22,13 +22,15 @@ Having played with this via VirtualBox, it is not as convenient to use as via a 
 
 For convenience, a pre-built Docker container will be used.
 
-```
-docker pull kontotto/rosecheckers
-```
 
+
+Build the container
 ```
 sudo docker pull kontotto/rosecheckers # grab an existing rosechecker docker container
- 
+```
+
+Run the container
+ ```
 cd ./Hello # change current/present working dir to Hello where hello.c/h lives
 
 sudo docker run -i  -v $(pwd):/home/ -t kontotto/rosecheckers rosecheckers /home/hello.c > Rosecheckers.txt  # from host machine, run rosechecker in docker container mapping dir containing hello.c into container, and store results in Rosecheckers.txt
