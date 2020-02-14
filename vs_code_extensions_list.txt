@@ -1,0 +1,14 @@
+cschlosser.doxdocgen
+esbenp.prettier-vscode
+jebbs.plantuml
+lextudio.restructuredtext
+matthewferreira.cppcheck
+mitaki28.vscode-clang
+ms-azuretools.vscode-docker
+ms-python.python
+ms-vscode.cpptools
+nickdemayo.vscode-json-editor
+redhat.vscode-yaml
+tberman.json-schema-validator
+webfreak.debug
+yzhang.markdown-all-in-one

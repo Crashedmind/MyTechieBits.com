@@ -8,6 +8,8 @@ tags: ['documentation as code', 'Exhale', 'Sphinx', 'Doxygen']
 published: true
 ---
 
+See https://crashedmind.github.io/docdac-site/ as an example documentation built with the tool and code it is describing.
+
 There are 2 types of documentation:
 * describes the code - aimed at a developer of that code e.g. an API document
 * describes how to use that code - e.g. a HowTo
