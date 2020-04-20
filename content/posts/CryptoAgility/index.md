@@ -37,10 +37,21 @@ Per [RFC7696](https://www.rfc-editor.org/info/rfc7696), Cryptographic Agility is
 * For the protocol designer, algorithm agility means that one or more algorithm or suite identifiers must be supported, the set of mandatory-to-implement algorithms will change over time, and an IANA registry of algorithm identifiers will be needed. 
 
 
-
-
-
 This is really just standard good software design practice i.e. loose coupling as part of loose-coupling, high-cohesion.
+
+## Examples of Cryptographic Algorithm Agility
+The following well known protocol examples dynamically allow the algorithm to change while still allowing interoperability:
+* TLS, IPSEC for communication
+* CMS for data encapsulation
+
+## Protocol Agility
+The above defintion of Cryptographic Agility is focused on Algorithm Agility. However, protocols themselves evolve over time and this changed must be supported also.
+This is typically done by 
+* upgrading the protocol implementation (i.e. software version) that supports the later protocol version
+* support the older protocol for an interim transition period
+* deprecate support for the older protocol when ready
+
+
 
 # Guidelines for being Crypto Agile
 1. [Use higher level crypto interfaces](https://github.com/Crashedmind/DevGuide/blob/master/03-Build/0x11-Cryptography.md#avoid-creating-your-own-cryptography) i.e. standard protocols, else schemes that support "cipher suites" - don't call raw crypto primitives
