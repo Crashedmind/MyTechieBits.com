@@ -42,19 +42,16 @@ This is really just standard good software design practice i.e. loose coupling a
 
 # Guidelines for being Crypto Agile
 1. [Use higher level crypto interfaces](https://github.com/Crashedmind/DevGuide/blob/master/03-Build/0x11-Cryptography.md#avoid-creating-your-own-cryptography) i.e. standard protocols, else schemes that support "cipher suites" - don't call raw crypto primitives
-
-* where a "cipher suite" is a set of pre-defined configurations for algorithm and key size and parameter size e.g. as used in TLS, or [CMS](https://tools.ietf.org/html/rfc5652).
-
-* Avoid creating your own crypto algorithms, formats, solutions. Conform to crypto standards - making it easier to transition to a different solution.
-* use identifiers and versions for crypto algorithms, messages, formats https://tools.ietf.org/html/draft-housley-crypto-alg-agility-00 i.e. from the payload alone it should be possible to uniquely identify what crypto was used to process that payload
-
+   * where a "cipher suite" is a set of pre-defined configurations for algorithm and key size and parameter size e.g. as used in TLS, or [CMS](https://tools.ietf.org/html/rfc5652).
+   * Avoid creating your own crypto algorithms, formats, solutions. Conform to crypto standards - making it easier to transition to a different solution.
+   * use identifiers and versions for crypto algorithms, messages, formats https://tools.ietf.org/html/draft-housley-crypto-alg-agility-00 i.e. from the payload alone it should be possible to uniquely identify what crypto was used to process that payload
 2. use-a-conservative-minimum-trusted-set-of-primitives-and-schemes
-* supporting too many leads to higher probability that one will need to change 
-* supporting only one increases the impact if change required
+   * supporting too many leads to higher probability that one will need to change 
+   * supporting only one increases the impact if change required
 3. Use a modular approach to security building blocks / services
-* i.e. loose-coupling, high-cohesion.
+   * i.e. loose-coupling, high-cohesion.
 4. Walk - don't run
-* i.e. do a self-assessment and come up with a long-term plan for crypto-agility and quantum-resistance that fits with overall product roadmap
+   * i.e. do a self-assessment and come up with a long-term plan for crypto-agility and quantum-resistance that fits with overall product roadmap
 
 
 # Example
@@ -62,6 +59,9 @@ This is really just standard good software design practice i.e. loose coupling a
 Taking the example code from the [book Network Security with OpenSSL](https://www.amazon.com/_/dp/059600270X): source code [here](https://resources.oreilly.com/examples/9780596002701/blob/master/NSwO-1.3/EX10-9):
 
 This program PKCS#7 encrypts input from the command line, with the  certificate specified on the command line, to create an output EnvelopedData type. The same program can do the corresponding EnvelopedData decryption.
+
+Using PKCS#7/[CMS](https://tools.ietf.org/html/rfc5652) per guidelines makes it easier to change the asymmetric or symmetic algorithm involved with encrypting the input data. The resulting Content Type is self-describing i.e. it says what asymmetric or symmetic algorithms were used to encrypt the data.
+
 
 ````
 /* choose cipher and read in all certificates as encryption targets */
