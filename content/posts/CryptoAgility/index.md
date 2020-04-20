@@ -8,6 +8,8 @@ tags: ['Cryptography', 'Agility', 'Quantum']
 published: true
 ---
 
+![](Lorenz-SZ42-2.jpg)
+
 Algorithms and keys sizes change over time as technology advances
 1. e.g. from DES (to 2TDEA to 3TDEA) to AES.
 2. e.g. from RSA to ECC to [future Quantum-resistant cryptography](https://nvlpubs.nist.gov/nistpubs/ir/2016/nist.ir.8105.pdf)
@@ -99,6 +101,36 @@ cat enc.txt | ./ed decrypt E_RSA.pem E_RSA.crt.pem
 In the source code, the symmetric algorithm used is hardcoded in the source code instead of being passed in as a parameter to the program.
 
 But even so, the PKCS#7/CMS EnvelopedData type created will indicate what symmetric algorithm was used. The receiver can identify and automatically change the symmetric algorithm used to decrypt the data.
+
+## PKCS#7/CMS EnvelopedData Type
+![](envelopeddata.png)
+
+The process by which enveloped data is constructed involves the following steps:
+1.	A content-encryption key for a particular content-encryption algorithm is generated at random.
+2.	For each recipient, the content-encryption key is encrypted with the recipient's public key.
+3.	For each recipient, the encrypted content-encryption key and other recipient-specific information are collected into a RecipientInfo value.
+4.	The content is encrypted with the content-encryption key.
+5.	The RecipientInfo values for all the recipients are collected together with the encrypted content into a EnvelopedData value.
+
+A recipient opens the envelope by decrypting one of the encrypted content-encryption keys with the recipient's private key and decrypting the encrypted content with the recovered content-encryption key.  
+
+The fields of type EnvelopedData have the following meanings:
+
+* version is the syntax version number. 
+* recipientInfos is a collection of per-recipient information. There must be at least one element in the collection.
+* encryptedContentInfo is the encrypted content information.
+
+The fields of type EncryptedContentInfo have the following meanings:
+* contentType indicates the type of content.
+* contentEncryptionAlgorithm identifies the content-encryption algorithm (and any associated parameters) under which the content is encrypted. This algorithm is the same for all recipients.
+* encryptedContent is the result of encrypting the content. 
+
+The fields of type RecipientInfo have the following meanings:
+* version is the syntax version number. 
+* issuerAndSerialNumber specifies the recipient's certificate (and thereby the recipient's distinguished name and public key) by issuer distinguished name and issuer-specific serial number.
+* keyEncryptionAlgorithm identifies the key-encryption algorithm (and any associated parameters) under which the content-encryption key is encrypted with the recipient's public key. 
+* encryptedKey is the result of encrypting the content-encryption key with the recipient's public key. 
+
 
 
 # Post-Quantum Cryptography
