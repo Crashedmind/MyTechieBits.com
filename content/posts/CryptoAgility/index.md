@@ -11,9 +11,9 @@ published: true
 ![](Lorenz-SZ42-2.jpg)
 
 Algorithms and keys sizes change over time as technology advances
-1. e.g. from DES (to 2TDEA to 3TDEA) to AES.
+1. e.g. from [DES (to 2TDEA to 3TDEA) to AES](https://www.cryptomathic.com/news-events/blog/3des-is-officially-being-retired).
 2. e.g. from RSA to ECC to [future Quantum-resistant cryptography](https://nvlpubs.nist.gov/nistpubs/ir/2016/nist.ir.8105.pdf)
-3. e.g. from MD5 to SHA-1 to SHA-2 to SHA-3
+3. e.g. from MD5 [to SHA-1 to SHA-2 to SHA-3](https://www.csoonline.com/article/2879073/all-you-need-to-know-about-the-move-from-sha1-to-sha2-encryption.html)
 
 If this change is not accounted for when designing a system, it can prevent future proofing, and make the transition and maintenance
 1. more painful i.e. more effort
@@ -25,7 +25,8 @@ This page gives
 3. a simple practical example for crypto agility.
 
 # Definition
-Cryptographic Agility can be [described as three properties](https://randomoracle.wordpress.com/2014/11/09/the-challenge-of-cryptographic-agility/), in order of priority:
+
+[Cryptographic Agility](https://en.wikipedia.org/wiki/Crypto-agility#) can be [described as three properties](https://randomoracle.wordpress.com/2014/11/09/the-challenge-of-cryptographic-agility/), in order of priority:
 
 1. Users can choose which cryptographic primitives (such as encryption algorithm, hash-function, key-exchange scheme etc.) are used in a given protocol
 2. Users can replace the implementation of an existing cryptographic primitive, with one of their choosing
@@ -54,6 +55,7 @@ This is typically done by
 
 
 # Guidelines for being Crypto Agile
+
 1. [Use higher level crypto interfaces](https://github.com/Crashedmind/DevGuide/blob/master/03-Build/0x11-Cryptography.md#avoid-creating-your-own-cryptography) i.e. standard protocols, else schemes that support "cipher suites" - don't call raw crypto primitives
    * where a "cipher suite" is a set of pre-defined configurations for algorithm and key size and parameter size e.g. as used in TLS, or [CMS](https://tools.ietf.org/html/rfc5652).
    * Avoid creating your own crypto algorithms, formats, solutions. Conform to crypto standards - making it easier to transition to a different solution.
@@ -113,7 +115,8 @@ In the source code, the symmetric algorithm used is hardcoded in the source code
 
 But even so, the PKCS#7/CMS EnvelopedData type created will indicate what symmetric algorithm was used. The receiver can identify and automatically change the symmetric algorithm used to decrypt the data.
 
-## PKCS#7/CMS EnvelopedData Type
+## PKCS7 / CMS EnvelopedData Type
+
 ![](envelopeddata.png)
 
 The process by which enveloped data is constructed involves the following steps:
