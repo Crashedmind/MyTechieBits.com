@@ -2,7 +2,7 @@
 path: "/ElasticSearchPlantuml"
 cover: "../ElasticSearchPlantuml/examples/S3_ELK_Cloud.png"
 date: "2020-04-11"
-title: "ElasticSearch Plantuml Icons"
+title: "Plantuml ElasticSearch Icons"
 tags: ['ElasticSearch', 'ELK', 'Plantuml']
 
 published: true
