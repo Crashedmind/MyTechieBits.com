@@ -33,12 +33,12 @@ An **architectural principle** is a fundamental statement of belief, approach, o
 ## Deﬁne the guiding principles
 
 
-### **[Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/) Architecture**
+### Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/) Architecture
 
 [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/) is the most mature framework to Scale Agile across multiple teams and throughout the organisation.
 
 
-### **[SAFe Principles](https://www.scaledagileframework.com/safe-lean-agile-principles/)**
+### [SAFe Principles](https://www.scaledagileframework.com/safe-lean-agile-principles/)
 
 
 
@@ -53,7 +53,7 @@ An **architectural principle** is a fundamental statement of belief, approach, o
 9. [Decentralize decision-making](https://www.scaledagileframework.com/decentralize-decision-making/)
 
 
-#### **Agile Architecture Overview and Context**
+#### Agile Architecture Overview and Context
 
 
 
@@ -100,23 +100,23 @@ Go to [https://www.scaledagileframework.com/](https://www.scaledagileframework.c
 8. [Metrics](https://www.scaledagileframework.com/metrics/)
 
 
-#### **SAFe Agile Architecture Principles**
+#### SAFe Agile Architecture Principles
 
 [Agile Architecture](https://www.scaledagileframework.com/agile-architecture) is applicable to all levels of SAFe and is supported by the following [principles](https://www.scaledagileframework.com/agile-architecture):
 
 
 
-1. **Design emerges.**
-2. **Architecture is a collaboration.**
-3. **The bigger the system, the longer the runway.**
-4. **Build the simplest architecture that can possibly work.**
-5. **When in doubt, code or model it out.**
-6. **They build it. They test it.**
-7. **There is no monopoly on innovation.**
-8. **Implement architectural flow.**
+1. Design emerges.
+2. Architecture is a collaboration.
+3. The bigger the system, the longer the runway.
+4. Build the simplest architecture that can possibly work.
+5. When in doubt, code or model it out.
+6. They build it. They test it.
+7. There is no monopoly on innovation.
+8. Implement architectural flow.
 
 
-### **Continuous Architecture**
+### Continuous Architecture
 
 Continuous Architecture builds on [Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/) with a focus on architecture for Continuous Delivery.
 
@@ -129,18 +129,18 @@ This is architecture in the Continuous Delivery world.
 
 
 
-1. **Architect products, not just solutions for projects**
+1. Architect products, not just solutions for projects
     * Architecting products is more efficient than just designing point solutions to projects and focuses the team on its customers.
-2. **Focus on Quality Attributes, not on functional requirements. **
+2. Focus on Quality Attributes, not on functional requirements. 
     * Quality attribute requirements drive the architecture.
-3. **Delay design decisions until they are absolutely necessary.**
+3. Delay design decisions until they are absolutely necessary.
     * Design architectures based on facts, not on guesses There is no point in designing and implementing capabilities that may never be used; it is a waste of time and resources.
-4. **Architect for change - leverage “the power of small." **
+4. Architect for change - leverage “the power of small." 
     * Big, monolithic, tightly coupled components are hard to change. instead, leverage small, loosely coupled services
-5. **Architect for build, test, and deploy. **
+5. Architect for build, test, and deploy. 
     * [https://www.scaledagileframework.com/design-for-testability-a-vital-aspect-of-the-system-architect-role-in-safe/](https://www.scaledagileframework.com/design-for-testability-a-vital-aspect-of-the-system-architect-role-in-safe/)
     * Most architecture methodologies exclusively focus on software building activities, but we believe that architects should be concerned about testing and deployment activities in order to support Continuous Delivery.
-6. **Model the organization after the design**
+6. Model the organization after the design
     * The way teams are organized drives the architecture and design of the systems they are working on
        * Organizing teams by capability or product feature promotes effective communications among team members. 
             * Teams that use that approach discover that the vast majority of issues are identiﬁed early in the software development process. Issues are solved before they turn into unpleasant surprises at the end of the project or before they turn into defects in production
@@ -150,10 +150,10 @@ This is architecture in the Continuous Delivery world.
     * ref [https://www.scaledagileframework.com/features-and-components/](https://www.scaledagileframework.com/features-and-components/)
 
 
-### **Disciplined Agile Delivery**
+### Disciplined Agile Delivery
 
 
-#### **Disciplined Agile Delivery Principles**
+#### Disciplined Agile Delivery Principles
 
 
 
@@ -164,34 +164,34 @@ This is architecture in the Continuous Delivery world.
 Ref [Continuous Architecture and Emergent Design](https://www.agilealliance.org/resources/sessions/continuous-architecture-and-emergent-design/), Scott Ambler (author of DaD)
 
 
-#### **General Solution Architecture Principles**
+#### General Solution Architecture Principles
 
 
 
-1. **Architecture owners should understand why**
-2. **Look beyond technology**
-3. **Adopt a multi-view approach**
-4. **Architecture is driven by requirements**
-5. **Architectures should be loosely coupled**
-6. **Architectural elements should be highly cohesive**
+1. Architecture owners should understand why
+2. Look beyond technology
+3. Adopt a multi-view approach
+4. Architecture is driven by requirements
+5. Architectures should be loosely coupled
+6. Architectural elements should be highly cohesive
 
 
-#### **Principles of Agile Solution Architecture**
+#### Principles of Agile Solution Architecture
 
 
 
-1. **Think about the future, but wait to act**
-2. **Learn early, learn fast**
-3. **Simplicity first**
-4. **Build quality in**
-5. **Model in an agile manner**
-6. **Be enterprise aware**
+1. Think about the future, but wait to act
+2. Learn early, learn fast
+3. Simplicity first
+4. Build quality in
+5. Model in an agile manner
+6. Be enterprise aware
 
 
-### **What are our principles?**
+### What are our principles?
 
 
-##### **Architect for build, test, and deploy <span style="text-decoration:underline;">and quantitative feedback</span>**
+##### Architect for build, test, and deploy <span style="text-decoration:underline;">and quantitative feedback</span>
 
 
 ## Views
@@ -204,7 +204,7 @@ In the beginning, 4+1 view [https://en.wikipedia.org/wiki/4%2B1_architectural_vi
 
 
 
-### **Annex: Development Approaches**
+### Annex: Development Approaches
 
 See [presentation](https://resources.sei.cmu.edu/asset_files/Presentation/2016_017_001_454847.pdf) or [book](https://www.amazon.co.uk/Continuous-Architecture-Sustainable-Agile-Cloud-Centric/dp/0128032847/ref=sr_1_1?ie=UTF8&qid=1526414344&sr=8-1&keywords=continuous+architecture) for more info
 
