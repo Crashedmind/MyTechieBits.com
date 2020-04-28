@@ -28,5 +28,14 @@ I maintain various content: Blogs, Booklets, Projects.
 
 
 
+# Managing Content 
+
+As ideas come up, I need somewhere to capture them and then later prioritize, execute, and track. 
+
+In general, I use Trello for this type of thing.
+
+Github has Trello-like functionality i.e. a Kanban board under Projects e.g. https://github.com/Crashedmind/MyTechieBits.com/projects/1.
+
+This keeps "stuff in one place" i.e. the task list is maintained and managed with the project in GitHub. Nice!
 
 
