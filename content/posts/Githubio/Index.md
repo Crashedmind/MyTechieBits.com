@@ -8,7 +8,7 @@ tags: ['GitHub', 'Blog', 'Project', 'Booklet']
 published: true
 ---
 
-![](Githubio/landingpage.png)
+![](landingpage.png)
 
 
 # Content on Github
