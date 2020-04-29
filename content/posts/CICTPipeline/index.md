@@ -95,7 +95,7 @@ Pre-commit testing</h4>
 
 <li>Coding style checks/guidelines auto-checked
 
-<li>Deprecated/unsafe functions checked e.g. <a href="https://crashedmind.atlassian.net/wiki/pages/createpage.action?spaceKey=VD&title=Warning+generation+on+use+of+unsafe+C+functions">Warning generation on use of unsafe C functions</a>  
+<li>Deprecated/unsafe functions checked e.g. Warning generation on use of unsafe C functions  
 <ol>
  
 <li>private APIs that should not be called by an application could also be checked in a similar way to deprecated/unsafe functions
@@ -158,7 +158,7 @@ Commit testing</h4>
 </li> 
 </ol>
 
-<li>Cppcheck on commit GIT hook (ref <a href="https://crashedmind.atlassian.net/wiki/pages/createpage.action?spaceKey=VD&title=Cppcheck+Secure+Static+Analysis+on+GIT+PUSH+Process">Cppcheck Secure Static Analysis on GIT PUSH Process</a>)
+<li>Cppcheck on commit GIT hook (ref Cppcheck Secure Static Analysis on GIT PUSH Process)
 
 <li>Coding guidelines auto-checked
 </li>
@@ -237,7 +237,7 @@ Quick-turn broad based testing by pillar</h4>
 </li> 
 </ol>
 
-<li><a href="https://crashedmind.atlassian.net/wiki/pages/createpage.action?spaceKey=VD&title=Permissions+and+privileges+review">Permissions and privileges review</a>
+<li>Permissions and privileges review
 </li>
 </ol>
    </td>
