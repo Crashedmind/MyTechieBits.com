@@ -63,6 +63,7 @@ This is the first draft workflow. It meets the stated goal.
 
 Other ideas/features will be tracked on the associated Github Project https://github.com/Crashedmind/PlantUMLGithubWorkFlow/projects/1
 
+The workflow lives here https://github.com/Crashedmind/PlantUMLGithubWorkFlow. Snapshot below:
 
 ````
 
