@@ -19,7 +19,7 @@ Auto-generate and commit diagrams on diagram source commit to repo:
 5. Generate png diagrams 
 6. List source file and generated files
 7. Commit files
-8. Push changes to repo
+8. Push new images to repo
 
 # GitHub Actions
 
@@ -51,15 +51,15 @@ https://github.com/marketplace?query=plantuml
 PlantUML Generator looks to be the closest to what I want.
 
 This ran but did not produce any output files.
-After a bit of poking around it turned out to be how the environment variables were passed in the example workflow associated with this Github action.
+
+After a bit of poking around it turned out to be how the environment variables were passed in the example workflow associated with this PlantUML Github action.
 https://github.com/cloudbees/plantuml-github-action/pull/3
 
-
+I then added a github push action - chosing the simplest one I found that did the job.
 
 ## Workflow
 
-This is the first draft workflow.
-
+This is the first draft workflow. It meets the stated goal.
 
 Other ideas/features will be tracked on the associated Github Project https://github.com/Crashedmind/PlantUMLGithubWorkFlow/projects/1
 
