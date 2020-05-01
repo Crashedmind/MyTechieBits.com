@@ -64,3 +64,4 @@ yarn-error.log
 static/logo/header-logo.png.bak
 content/staging/StaticAnalysisBenchmarks/index.md
 content/posts/CryptoAgility/5c76a740dcc2cc4646a06805_ISG_AgilityUseCases_Whitepaper-FINAL.pdf
+out/

@@ -14,6 +14,8 @@ published: true
 2. Auto-check links from Markdown source files on push to repo
 3. Auto-generate html from Sphinx RST or MD files
 
+![](workflow.png )
+
 
 # GitHub Actions
 
