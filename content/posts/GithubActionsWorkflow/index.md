@@ -8,18 +8,12 @@ published: true
 ---
 
 
-# Goal
+# Goals
 
-Auto-generate and commit diagrams on diagram source commit to repo:
+1. Auto-generate and commit diagrams on diagram source push to repo
+2. Auto-check links from Markdown source files on push to repo
+3. Auto-generate html from Sphinx RST or MD files
 
-1. PlantUML source files *.puml are uploaded to a GitHub repo
-2. This triggers the workflow associated with that repo for each file
-3. Checkout source
-4. Generate svg diagrams 
-5. Generate png diagrams 
-6. List source file and generated files
-7. Commit files
-8. Push new images to repo
 
 # GitHub Actions
 
@@ -36,6 +30,16 @@ Auto-generate and commit diagrams on diagram source commit to repo:
 
 
 
+# Auto-generate and commit diagrams on diagram source commit to repo:
+
+1. PlantUML source files *.puml are uploaded to a GitHub repo
+2. This triggers the workflow associated with that repo for each file
+3. Checkout source
+4. Generate svg diagrams 
+5. Generate png diagrams 
+6. List source file and generated files
+7. Commit files
+8. Push new images to repo
 
 
 
@@ -63,7 +67,7 @@ This is the first draft workflow. It meets the stated goal.
 
 Other ideas/features will be tracked on the associated Github Project https://github.com/Crashedmind/PlantUMLGithubWorkFlow/projects/1
 
-The workflow lives here https://github.com/Crashedmind/PlantUMLGithubWorkFlow. Snapshot below:
+The workflow lives here https://github.com/Crashedmind/PlantUMLGithubWorkFlow/.github/workflows/main.yml. Snapshot below:
 
 ````
 
@@ -118,6 +122,59 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
+````
+
+# Auto-check links from Markdown source files on push to repo
+
+The workflow lives here https://github.com/Crashedmind/MyTechieBits.com/.github/workflows/main.yml. Snapshot below.
+
+Below workflow is pretty much as per examples in https://github.com/peter-evans/link-checker, but args changed to only scan *.md files (because package.json file was being scanned and creating lots of false positive errors). 
+
+````
+on: push
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Link Checker
+        uses: peter-evans/link-checker@v1
+        with:
+          args: -v -r *.md
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v2
+        with:
+          title: Link Checker Report
+          content-filepath: ./link-checker/out.md
+          labels: report, automated issue
+
+````
+
+# Auto-generate html from Sphinx RST or MD files
+
+The workflow lives here https://github.com/Crashedmind/sphinx-github-workflow/.github/workflows/main.yml. Snapshot below.
+
+````
+name: "Pull Request Docs Check"
+on:
+  push:
+    paths:
+      - '**.rst' #matches zero or more of any character
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ammaraskar/sphinx-action@master
+      with:
+        build-command: "sphinx-build -b html . _build/html"
+        docs-folder: "docs/"
+    - uses: actions/upload-artifact@v1
+      with:
+        name: DocumentationHTML
+        path: docs/_build/html/
+        
 ````
 
 
