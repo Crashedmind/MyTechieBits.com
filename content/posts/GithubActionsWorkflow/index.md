@@ -1,6 +1,6 @@
 ---
 path: "/GithubActionsWorkflow"
-cover: "../GithubActionsWorkflow/plantuml.png"
+cover: "../GithubActionsWorkflow/workflow.png"
 date: "2020-05-11"
 title: "Github Actions and Workflows"
 tags: ['Github', 'CI', 'Workflow']
