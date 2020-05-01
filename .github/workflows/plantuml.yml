@@ -28,15 +28,15 @@ jobs:
       - name: Generate SVG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
-            args: -r -v -tsvg *${{ env.UML_FILES }} -o ${{ env.OUTPUT_DIR }}
-
+            args: -r -v -tsvg *${{ env.UML_FILES }} 
+            
       - name: Generate PNG Diagrams
         uses: cloudbees/plantuml-github-action@master
         with:
-            args: -r -v -tpng *${{ env.UML_FILES }} -o  ${{ env.OUTPUT_DIR }}
+            args: -r -v -tpng *${{ env.UML_FILES }} 
  
       - name: List files
-        run: ls *${{ env.UML_FILES }}; ls -o ${{ env.OUTPUT_DIR }}/*.svg; ls -o ${{ env.OUTPUT_DIR }}/*.png      
+        run: ls -lar *${{ env.UML_FILES }}; ls -lar ${{ env.OUTPUT_DIR }}/*.svg; ls -lar *.png      
       
       - name: Commit Changed Files
         run: |
