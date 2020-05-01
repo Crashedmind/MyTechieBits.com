@@ -1,0 +1,28 @@
+@startuml
+
+:me: as t
+(On push to Github remote) as GR
+(PlantUML Generator \nWorkflow) as PG
+(Link Checker \nWorkflow) as LC
+(Netlify Gatsby \nStatic Site Generator) as GB
+(Sphinx \nWorkflow) as SD
+(Github Remote) as RM
+(Issue) as IS
+(Gatsby Hosting) as HS
+(Github Hosting) as GH
+
+
+
+t --> GR: Push
+GR --> PG: puml source files
+GR --> LC: md, rst source files
+GR --> GB: md source files for \n openstemkids.com \n mytechiebits.com
+GR --> SD: md, rst source files
+
+PG --> RM: Commit svg, png files
+LC --> IS: Auto-create issue on error
+GB --> HS: Publish Static site
+SD --> GH: Publish Static site
+
+@enduml
+
