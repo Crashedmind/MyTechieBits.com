@@ -10,6 +10,7 @@ published: true
 
 ![](Lorenz-SZ42-2.jpg)
 
+
 Algorithms and keys sizes change over time as technology advances
 1. e.g. from [DES (to 2TDEA to 3TDEA) to AES](https://www.cryptomathic.com/news-events/blog/3des-is-officially-being-retired).
 2. e.g. from RSA to ECC to [future Quantum-resistant cryptography](https://nvlpubs.nist.gov/nistpubs/ir/2016/nist.ir.8105.pdf)
