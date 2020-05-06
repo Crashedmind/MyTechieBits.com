@@ -293,7 +293,50 @@ xLQ7bjim30CdzFzVtEV1iErPkJpT7iYm5aWDKERujFZ5Bp8YkSvM011VfMzSDy2Mw1JidbCGAtmllmbP
 ![](3.png )
 
 
-## Step 3 Where did that guy come from?
+### Step 3.1 Bare Minimum by including Batch.puml
+
+The result is the same.
+
+````
+@startuml 
+
+
+!include ./AWSCommon.puml
+!include ./Compute/Batch.puml
+
+
+@enduml
+
+````
+![](3.png )
+
+### Step 3.2 Illegal Bare Minimum by including all.puml
+
+Note: This is not valid plantuml as it does not contain any elements. 
+* The VSCode Plantuml extension will happily render this in preview mode. But VSCode Plantuml extension export will fail
+* Plantuml call will generate a blank output.
+
+````
+java -jar ~/system/plantuml.jar dist/all.puml
+
+````
+
+
+````
+@startuml 
+
+!include ./AWSCommon.puml
+!include ./Compute/all.puml
+
+@enduml
+
+````
+
+
+![](all.png )
+
+
+## Step 4 Where did that guy come from?
 
 If any color is added we get an actor (from Deployment Diagram so can explicitly use a rectangle as the Deployment Diagram entity - see next example)
 
@@ -316,7 +359,7 @@ uV7KGPNO2lya17gz1pMiD1VmFNH9IBLNe3xA3q07eNsMy_WdXESwU4jRmddEk-FUuPFjjthiqAEGVUz8
 
 ![](4.png )
 
-## Step 4 Lose the guy - add a Deployment Diagram Rectangle Instead
+### Step 4.1 Lose the guy - add a Deployment Diagram Rectangle Instead
 
 ````
 @startuml
@@ -365,7 +408,7 @@ Based on reconstructing the existing Macros, we can define our own minimal macro
 where the parameters are
 1. Batch - this refers to the sprite $Batch
 2. e_alias - this adds on a "as whatever" so multiple calls to same sprite return multiple rendered icons.
-#D86613 is the color defined as part of the sprite puml file
+"#D86613" is the color defined as part of the sprite puml file
 
 
 
@@ -407,7 +450,7 @@ Batch(3.13xyz)
 
 ![](7.png )
 
-## Step 7 Add Scaling to AWSEntity Macro
+### Step 6.1 Add Scaling to AWSEntity Macro
 
 Replacing the last lines from the previous example to add scale.
 
@@ -429,9 +472,38 @@ This scale parameter could be added to existing macros in puml files e.g. https:
 
 ````
 
-# References
-1. 
+## Step 7 Updating the puml files to support minimal macro 
+
+Using AWSSimplified.puml as a reference, we can create an AWSBare.puml file.
+
+````
+' Styling
+' ##################################
+
+hide stereotype
+
+!definelong AWSEntityColoring(e_stereo)
+skinparam rectangle<<e_stereo>> {
+    BackgroundColor AWS_BG_COLOR
+    BorderColor transparent
+    Shadowing false
+}
+!enddefinelong
+
+' Overwriting Elements
+' ##################################
+
+!definelong AWSEntity(e_sprite, e_color)
+rectangle "<color:e_color><$e_sprite></color>" 
+!enddefinelong
 
 
+````
 
- 
+For each icon puml file e.g. Batch.puml
+
+````
+
+!define Batch(e_sprite) AWSEntity(e_sprite, #D86613)
+
+````
