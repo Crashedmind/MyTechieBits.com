@@ -219,7 +219,7 @@ skinparam folderBackgroundColor<<DEV ANDROID>> White
 
 1. There's no way to scale the icons from the macros (the !define statements). Plantuml does support scaling per https://forum.plantuml.net/4267/scaling-of-the-sprites-or-images. Support for scaling stereotypes is available since [March 2019](https://forum.plantuml.net/4267/scaling-of-the-sprites-or-images?show=9086#c9086). 
 2. At least 3 parameters are required and are rendered in the diagams "!define Batch(e_alias, e_label, e_techn)". 
-   1. So if we wanted a colored or scaled icon, the only option is to use the raw sprite (more on that later).
+   1. So if we wanted a colored or scaled icon only (with no label or technology), the only option is to use the raw sprite (more on that later).
 3. The PlantUML Stdlib lacks consistency and therefore user friendliness
 
 # Steps to Understanding
@@ -372,7 +372,7 @@ uV7KGPNO2lya17gz1pMiD1VmFNH9IBLNe3xA3q07eNsMy_WdXESwU4jRmddEk-FUuPFjjthiqAEGVUz8
 -Ikh_YdmYr_y0G
 }
 
-"<$Batch>"
+rectangle "<$Batch>"
 
 @enduml
 ````
